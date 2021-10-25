@@ -130,7 +130,7 @@
     <ModalVu v-if="modalVisible">
       <template v-slot:head>
         <div class="hide">
-          <a href="#" @click="toggleFalse">x</a>
+          <a href="#" @click.prevent="toggleFalse">x</a>
         </div>
         <div class="modall">
           <p>برای دریافت کد تخفیف، لطفا شماره موبایل خود را وارد کنید</p>
@@ -171,21 +171,21 @@
         </div>
       </template>
     </ModalVu>
-    <CoinDetails @toggle-mod="toggleMod" />
+    <CoinDetailsRight @toggle-mod="toggleMod" />
   </div>
 </template>
 
 <script>
 import ModalVu from '~/components/ModalVu';
 import axios from 'axios'
-import CoinDetails from '~/components/CoinDetails';
+import CoinDetailsRight from '~/components/CoinDetailsRight';
 import timer from '~/components/timer';
 import NewDetails from '~/components/NewDetails';
 
 export default {
   components:{
     ModalVu,
-    CoinDetails,
+    CoinDetailsRight,
     timer,
     NewDetails
   },

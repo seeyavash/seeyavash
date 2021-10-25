@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+.maincont button {
+  cursor: pointer;
+}
+
 .first {
   width: 90%;
   border: 0.5px solid #CECECE;
@@ -209,8 +213,6 @@ svg {
 .getflex {
   display: flex;
   margin-top: 25px;
-  flex-direction: column;
-  align-items: center;
 }
 
 .maincont-right h1 {
@@ -224,10 +226,12 @@ svg {
   margin: 50px 0;
 }
 
-.maincont-log a {
+.maincont-log button {
   text-align: center;
   margin-right: 60px;
   font-size: 20px;
+  background-color: inherit;
+  border: none;
 }
 
 
@@ -244,8 +248,8 @@ svg {
   padding-left: 10px;
 }
 
-.maincont-left a,
-.maincont-right a {
+.maincont-left button,
+.maincont-right button {
   color: #4B8DAA;
   font-size: 22px;
 }
@@ -338,8 +342,16 @@ header {
   margin-top: 40px;
 }
 
+.maincont-dis {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
+    display: flex;
+  }
+
+  .maincont-dis {
     display: flex;
   }
 
@@ -357,6 +369,10 @@ header {
 
   .showcase{
     margin-top: 25px;
+  }
+
+  .gor-mar {
+    display: inline;
   }
 
   .showcase h4{
@@ -381,6 +397,12 @@ header {
 
   .getflex {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .maincont-left {
+    display: none;
   }
 
   .discont h1{
@@ -397,7 +419,7 @@ header {
   }
 
   .discountN2 h1{
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .getOff {
@@ -409,6 +431,8 @@ header {
     font-size: 15px !important;
     margin-top: 6px;
     text-align: center;
+    border: none;
+    background: transparent;
   }
 
   .container {
@@ -467,6 +491,21 @@ header {
 
   .active {
     display: flex;
+  }
+}
+
+@media (min-width: 1700px) {
+  .bg {
+    display: none;
+  }
+
+  .blue {
+    display: none;
+  }
+
+  .auth a,
+  .auth p {
+    color: black;
   }
 }
 
@@ -594,7 +633,7 @@ form {
 }
 
 .discountN2 h1{
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 .discountN2 h1,

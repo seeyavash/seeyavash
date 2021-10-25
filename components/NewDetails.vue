@@ -2,7 +2,7 @@
   <section>
     <div>
       <div class="row discountN">
-        <div class="col-lg-3 col-md-12 col-sm-6 col-xs-6 discountN2" v-for="coin in coins1" :key="coin.id">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 discountN2" v-for="coin in coins1" :key="coin.id">
           <div class="imgTe">
             <img :src="require('~/assets/images/img/' + coin.link)" alt="vchain" />
           </div>
@@ -18,7 +18,7 @@
     </div>
     <div>
       <div class="row discountN">
-        <div class="col-lg-3 col-md-12 col-sm-6 col-xs-6 discountN2" v-for="coin in coins2" :key="coin.id">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 discountN2" v-for="coin in coins2" :key="coin.id">
           <div class="imgTe">
             <img :src="require('~/assets/images/img/' + coin.link)" alt="vchain" />
           </div>
